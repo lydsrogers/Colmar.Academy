@@ -1,0 +1,69 @@
+body {
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  text-align: center;
+}
+
+header img {
+  display: inline-flex;
+  padding-left: 1.5rem;
+  height: 3.5rem;
+  width: 3.5rem;
+
+
+}
+
+#colmar {
+  font-weight: bold;
+  color: black;
+}
+
+#academy {
+  font-weight: bold;
+  color: lightgrey;
+}
+
+.logo {
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  padding-right: 33rem;
+}
+
+.logo h1 {
+  padding-bottom: 1rem;
+}
+header li {
+  display: inline-flex;
+  padding-right: 1rem;
+  font-size: 2rem;
+  text-align: right;
+}
+
+.greycontainer {
+  background-color: lightgrey;
+  width: auto;
+  display: inline-flex;
+}
+
+.greycontainer img {
+  width: 60%;
+  padding-left: 1.5rem;
+  padding-top: 2rem;
+}
+.text {
+  padding-left: 2.5rem;
+  padding-top: 17rem;
+}
+.greybttn {
+  background-color: grey;
+  color: white;
+  height: 2.5rem;
+  text-align: center;
+  width: 20rem;
+}
