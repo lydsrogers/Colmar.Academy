@@ -36,13 +36,17 @@ header img {
 }
 
 .logo h1 {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 header li {
   display: inline-flex;
   padding-right: 1rem;
   font-size: 2rem;
   text-align: right;
+}
+
+.content {
+  width: auto;
 }
 
 .greycontainer {
@@ -52,13 +56,14 @@ header li {
 }
 
 .greycontainer img {
-  width: 60%;
-  padding-left: 1.5rem;
-  padding-top: 2rem;
+  max-width: 60%;
+  padding: 2rem 0rem 1.5rem 1.5rem;
+
 }
 .text {
   padding-left: 2.5rem;
   padding-top: 17rem;
+
 }
 .greybttn {
   background-color: grey;
@@ -66,4 +71,109 @@ header li {
   height: 2.5rem;
   text-align: center;
   width: 20rem;
+}
+
+.middlecontainer {
+  display: inline-flex;
+  width: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+}
+.leftcontainer {
+  width: auto;
+  padding-left: 2rem;
+}
+.leftcontainer img {
+  max-width: 57rem;
+  margin-bottom: 2rem;
+}
+
+.leftcontainer h2 {
+  margin-bottom: 1.5rem;
+}
+
+#author {
+  margin-top: 3rem;
+}
+
+.rightcont {
+  display: inline-block;
+  padding-left: 1.5rem;
+  width: auto;
+}
+.rightcont img {
+  size: 35%;
+  padding-bottom: 2rem;
+}
+
+.campustext,
+.orientationtext,
+.textbox {
+  padding-left: 24px;
+
+}
+
+
+.orientation {
+  display: inline-flex;
+}
+
+.campus {
+  display: inline-flex;
+}
+
+.rightcont h3 {
+  font-size: 2rem;
+  text-align:left;
+  color: darkgrey;
+}
+
+.rightcont h4 {
+  font-size: 0.75rem;
+  color: blue;
+}
+
+.guest {
+  display: inline-flex;
+  background-color: lightgrey;
+  padding: 1rem;
+}
+
+.thirdcont {
+  display: flex;
+  background-color: lightgrey;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+
+}
+
+.box img {
+  width: 100%;
+}
+
+.info {
+  padding: 1rem 0rem 1.5rem 1rem;
+}
+
+.box {
+  display: block;
+  background-color: white;
+  margin-right: 2rem;
+  width:30%;
+}
+
+.boxes {
+  display: inline-flex;
+  padding-left: 4rem;
+  padding-bottom: 2rem;
+  background-color: lightgrey;
+  width: auto;
+  flex-wrap: wrap;
 }
