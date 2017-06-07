@@ -166,6 +166,7 @@ header li {
   display: block;
   background-color: white;
   margin-right: 2rem;
+  margin-bottom: 2rem;
   width:30%;
 }
 
@@ -176,4 +177,60 @@ header li {
   background-color: lightgrey;
   width: auto;
   flex-wrap: wrap;
+}
+.bottomcont {
+
+
+}
+
+.title {
+  padding-bottom: 2rem;
+}
+
+.left {
+  width: 60%;
+  margin-left: 1.5rem;
+}
+
+.left img {
+  padding-bottom: 1.5rem;
+}
+.container {
+  display: inline-flex;
+}
+.left video {
+  width: 100%;
+
+}
+
+.right {
+  flex-direction: column;
+  margin-left: 1rem;
+  width: auto;
+}
+
+.fisma img {
+  padding: 1rem;
+  size: 35%;
+}
+
+.fisma.text {
+  display: flex;
+}
+
+.fisma {
+  background-color: lightgrey;
+  height: 10.5rem;
+  display: inline-flex;
+}
+
+.now {
+  display: inline-flex;
+  background-color:white;
+  height: 10.5rem;
+}
+
+.now img {
+  padding: 1rem;
+  size: 35%;
 }
