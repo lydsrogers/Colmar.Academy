@@ -127,8 +127,12 @@ a:visited {
   border-radius: 6px;
   padding-top: .5rem;
   font-style: normal;
+
 }
 
+.greybttn {
+  width: 100%;
+}
 
 
 .greycontainer a:visited {
@@ -211,6 +215,7 @@ a:visited {
 
 .rightcont p {
   font-size: .90rem;
+  color: darkslategrey;
 }
 
 .rightcont h4 {
@@ -270,10 +275,15 @@ a:visited {
   justify-content: center;
 }
 
+.boxes p {
+  color: darkslategrey;
+}
+
 .left {
   max-width: 60%;
   margin-left: 1.5rem;
 }
+
 
 .left img {
   padding-bottom: 1.5rem;
@@ -317,7 +327,10 @@ a:visited {
 
 .fismatext {
   margin-left: 2rem;
+}
 
+.fismatext p {
+  color: darkslategrey;
 }
 
 .fisma {
@@ -339,6 +352,9 @@ a:visited {
   margin-left: 2rem;
 }
 
+.nowtext p {
+  color: darkslategrey;
+}
 footer {
   font-size: 1.25rem;
   display: flex;
