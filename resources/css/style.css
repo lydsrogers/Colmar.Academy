@@ -1,7 +1,11 @@
+
 body {
   font-size: 16px;
   font-family: 'Pontano+Sans', sans-serif;
-  color: #5B5B5E;
+  color: #10182E;
+  width: auto;
+  margin:0;
+  padding:0;
 }
 
 header {
@@ -10,11 +14,17 @@ header {
   width: 100%;
   text-align: center;
   position: fixed;
-  background-color: white;
+  background-color: #3B4C79;
   top: 0;
+  flex-wrap: nowrap;
+
 }
 
 .mobileheader {
+  display: none;
+}
+
+ header .tabletmenu {
   display: none;
 }
 header li a {
@@ -43,8 +53,7 @@ header img {
 .logo {
   display: inline-flex;
   text-align: center;
-  justify-content: center;
-  padding-right: 50rem;
+  width: 65%;
 }
 
 .logo h1 {
@@ -53,9 +62,11 @@ header img {
 header li {
   display: inline-flex;
   padding-right: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
   text-align: right;
-  color: #6A687A;
+  color: #10182E;
+  flex-direction:row;
 
 }
 
@@ -66,28 +77,36 @@ a:visited {
 }
 
 .content {
-  width: auto;
+  width: 100%;
+  background-color: white;
 }
 
 .greycontainer {
   background-color: lightgrey;
-  width: auto;
+  width: 100%;
   display: inline-flex;
+  margin-left: 0;
 }
 
-.greycontainer img {
+.banner {
   max-width: 60%;
-  max-height: 60%;
+}
+
+.banner img {
+  max-width: 100%;
   padding: 6rem 0rem 1.5rem 1.5rem;
 
 }
 .text {
   padding-left: 2.5rem;
-  padding-top: 12rem;
+  max-width: 34.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .text h2 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .text p {
@@ -105,19 +124,29 @@ a:visited {
   width: 20rem;
 }
 
+
+.greycontainer a:visited {
+  color: lightgrey;
+  text-decoration:none;
+}
+
+.greycontainer a {
+  text-decoration:none;
+}
+
 .middlecontainer {
   display: inline-flex;
-  width: auto;
+  width: 100%;
   margin-top: 2rem;
   margin-bottom: 2rem;
 
 }
 .leftcontainer {
-  width: auto;
+  width: 60%;
   padding-left: 2rem;
 }
 .leftcontainer img {
-  max-width: 57rem;
+  max-width: 100%;
   margin-bottom: 2rem;
 }
 
@@ -137,10 +166,10 @@ a:visited {
 .rightcont {
   display: inline-block;
   padding-left: 1.5rem;
-  width: auto;
+  width: 34.1rem;
 }
 .rightcont img {
-  size: 35%;
+  max-width: 100%;
   padding-bottom: 2rem;
 }
 
@@ -149,6 +178,10 @@ a:visited {
 .textbox {
   padding-left: 24px;
 
+}
+
+.pic {
+  max-width: 35%;
 }
 
 
@@ -163,13 +196,13 @@ a:visited {
 }
 
 .rightcont h3 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align:left;
-  color: #444445;
+
 }
 
 .rightcont p {
-  font-size: 1rem;
+  font-size: .90rem;
 }
 
 .rightcont h4 {
@@ -188,7 +221,7 @@ a:visited {
   display: flex;
   background-color: #E2E1E4;
   flex-wrap: wrap;
-  width: auto;
+  width: 100%;
 }
 
 .title {
@@ -204,6 +237,10 @@ a:visited {
 
 .info {
   padding: 1rem 0rem 1.5rem 1rem;
+}
+
+.mobilebx {
+  display:none;
 }
 
 .box {
@@ -258,40 +295,48 @@ a:visited {
 .right {
   flex-direction: column;
   margin-left: 1rem;
-  width: auto;
+  width: 34.1rem;
+}
+
+.images {
+  width: 35%;
 }
 
 .fisma img {
   padding: 1rem;
-  size: 35%;
+  width: 100%;
 }
 
-.fisma.text {
-  display: flex;
+.fismatext {
+  margin-left: 2rem;
+
 }
 
 .fisma {
   background-color: lightgrey;
-  height: 10.5rem;
   display: inline-flex;
 }
 
 .now {
   display: inline-flex;
   background-color:white;
-  height: 10.5rem;
 }
 
 .now img {
-  padding: 1rem;
-  size: 35%;
+  padding-top: 1rem;
+  width:100%;
+}
+
+.nowtext {
+  margin-left: 2rem;
 }
 
 footer {
-  margin-left:1.5rem;
   font-size: 1.25rem;
   display: inline-flex;
   text-align: center;
+  background-color: #3B4C79;
+  width: 100%;
 }
 
 footer span {
@@ -304,35 +349,193 @@ footer span {
 
 }
 
+@media only screen and (min-width:1024px) {
+  .tabletmenu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:1024px) {
+
+  html {
+    font-size: 12px;
+    font-family: 'Pontano+Sans', sans-serif;
+  }
+  header li {
+    display: none;
+  }
+
+  .tabletmenu {
+    display: inherit;
+    justify-content: right;
+  }
+
+  .tabletmenu span {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: right;
+  }
+
+
+  header {
+    position: relative;
+  }
+}
+
 @media only screen and (max-width:480px) and (orientation: portrait) {
   header li,
-  .logo {
+  .logo, {
     display: none;
   }
 
   header {
     position: relative;
+    width: auto;
   }
 
   .greycontainer img {
     display: none;
   }
 
-  .greycontainer text {
-    padding-top: 5rem;
+  .mobileheader img {
+    height: 3rem;
+    align-content: center;
+    padding: 1rem;
   }
 
+  .text {
+    padding-top: 2rem;
+    padding-left: 1rem;
+  }
+
+  .text h2 {
+    font-size: 3rem;
+  }
+
+  .greybttn {
+    margin-bottom: 2rem;
+    width: 23rem;
+  }
+
+  .leftcontainer {
+    display: none;
+  }
+
+  .rightcont {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .boxes {
+    display: none;
+  }
+  .pic {
+    max-width: 100%;
+  }
+  .rightcont img {
+    max-width: 100%;
+
+  }
+
+  .orientation,
+  .campus,
+  .guest {
+    padding-left: 1rem;
+    display: block;
+    background-color:white;
+  }
   .mobilespc {
     background-color: darkgrey;
     height: 180px;
   }
 
+  .mobilebx {
+    display: inherit;
+    background-color: white;
+    flex-direction: column;
+    color: #444445;
+    font-size: 2rem;
+    align-content: center;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .mobilebx span {
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: left;
+    background-color: darkgrey;
+    margin: 1rem 1rem .5rem 1rem;
+  }
+
+  .mobilebx span a {
+    text-decoration: none;
+  }
+
+  .mobilebx a a:visited {
+    color: #444445;
+    text-decoration: none;
+  }
+
   .mobileheader {
     display: inherit;
+    background-color: #3B4C79;
   }
 
   .mobileheader img {
     size: 2rem;
   }
+
+  .right {
+    display: none;
+  }
+
+  .left {
+    flex-direction: column;
+    object-fit: contain;
+  }
+
+  .left h3 {
+    display:none;
+  }
+
+  .left p {
+    display: none;
+  }
+
+  .title {
+    display: inherit;
+    text-align:center;
+
+  }
+
+  .greybttn p {
+    text-align: center;
+  }
+
+  .video {
+    display: inherit;
+    max-width: 100%;
+  }
+
+  .video video {
+    max-width: 100%;
+  }
+ footer span {
+  display: none;
+ }
+
+ footer {
+      background-color: #3B4C79;
+ }
+
+ footer p {
+   display: inherit;
+   flex-direction: row;
+   font-size: .75rem;
+   wrap: nowrap;
+   width: 100%;
+
+ }
 
 }
