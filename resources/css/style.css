@@ -123,6 +123,7 @@ a:visited {
   text-align: center;
   width: 20rem;
   border-radius: 6px;
+  padding-top: .5rem;
 }
 
 
@@ -428,6 +429,7 @@ footer span {
     height: 3rem;
     align-content: center;
     padding: 1rem;
+    margin-right: 1rem;
   }
 
   .text {
@@ -445,15 +447,19 @@ footer span {
   }
 
   .thirdcont .title h2 {
-    margin-left: 7.5rem;
+    margin-left: 8.5rem;
   }
 
   .greybttn {
     margin-bottom: 2rem;
     width: 23rem;
     margin-left: 3.4rem;
+    padding-top: 1.5rem;
   }
 
+  #start {
+    font-size: 3rem;
+  }
   .leftcontainer {
     display: none;
   }
@@ -477,12 +483,12 @@ footer span {
 
   .rightcont h3 {
     text-align: center;
-    margin-right: 7.1rem;
+    margin-right: 6.5rem;
   }
 
   .rightcont p,
   h4 {
-    margin-right: 6.6rem;
+    margin-right: 5.7rem;
   }
 
   .orientation,
@@ -551,9 +557,7 @@ footer span {
     text-align:center;
 
   }
-.thirdcont title {
-  padding-left: 5rem;
-}
+
   .greybttn p {
     text-align: center;
   }
