@@ -2,7 +2,7 @@
 body {
   font-size: 16px;
   font-family: 'Pontano+Sans', sans-serif;
-  color: #10182E;
+  color: black;
   width: auto;
   margin:0;
   padding:0;
@@ -14,7 +14,7 @@ header {
   width: 100%;
   text-align: center;
   position: fixed;
-  background-color: #3B4C79;
+  background-color: #ffffff;
   top: 0;
   flex-wrap: nowrap;
 
@@ -46,7 +46,7 @@ header img {
 
 #academy {
   font-weight: bold;
-  color: lightgrey;
+  color: grey;
   padding-top: 1.4rem;
 }
 
@@ -63,11 +63,10 @@ header li {
   display: inline-flex;
   padding-right: 1rem;
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: normal;
   text-align: right;
-  color: #10182E;
+  color: grey;
   flex-direction:row;
-
 }
 
 a:visited {
@@ -111,12 +110,15 @@ a:visited {
 
 .text p {
   font-size: 1.7rem;
+  color: grey;
+  font-style: italic;
 }
 
 .text h4 {
   font-size: 1.5rem;
 }
-.greybttn {
+
+  .text .greybttn {
   background-color: grey;
   color: white;
   height: 2.5rem;
@@ -124,7 +126,9 @@ a:visited {
   width: 20rem;
   border-radius: 6px;
   padding-top: .5rem;
+  font-style: normal;
 }
+
 
 
 .greycontainer a:visited {
@@ -159,6 +163,8 @@ a:visited {
 
 .leftcontainer p{
   font-size: 1.25rem;
+  color: darkslategrey;
+  font-style: italic;
 }
 
 #author {
@@ -289,7 +295,9 @@ a:visited {
 
 .left p {
   font-size: 1.5rem;
-  font-family: serif;
+  font-family: sans-serif;
+  font-style: italic;
+  color: darkslategrey;
 }
 
 .right {
@@ -335,14 +343,15 @@ footer {
   font-size: 1.25rem;
   display: flex;
   text-align: center;
-  background-color: #3B4C79;
+  background-color: #ffffff;
   width: 100%;
   height: 4rem;
   bottom: 0;
+  border-top: darkgrey 1px solid;
 }
 
 footer p {
-  width: 60%;
+  width: 90%;
   text-align: left;
 }
 
@@ -354,7 +363,7 @@ footer span {
 .terms {
   display: inline-block;
   padding-top: 1.5rem;
-  width: 40%;
+  width: 10%;
 
 }
 
@@ -394,6 +403,10 @@ footer span {
 }
 
 @media only screen and (max-width:480px) and (orientation: portrait) {
+
+  html {
+    font-size: 14px;
+  }
   header li {
     display: none;
   }
@@ -420,7 +433,7 @@ footer span {
   }
   .greycontainer img {
     max-width: 90%;
-    margin-right:  1rem;
+    margin-right:  1.2rem;
     top: 0;
 
   }
@@ -429,13 +442,13 @@ footer span {
     height: 3rem;
     align-content: center;
     padding: 1rem;
-    margin-right: 1rem;
+
   }
 
   .text {
     display: flex;
     padding-top: 2rem;
-    padding-left: 1rem;
+    padding-left: .2rem;
     justify-content: center;
   }
 
@@ -447,7 +460,7 @@ footer span {
   }
 
   .thirdcont .title h2 {
-    margin-left: 8.5rem;
+    margin-left: 5.8rem;
   }
 
   .greybttn {
@@ -483,12 +496,12 @@ footer span {
 
   .rightcont h3 {
     text-align: center;
-    margin-right: 6.0rem;
+    margin-right: 5.0rem;
   }
 
   .rightcont p,
   h4 {
-    margin-right: 5.4rem;
+    margin-right: 4.6rem;
   }
 
   .orientation,
@@ -515,6 +528,7 @@ footer span {
     text-align: left;
     background-color: darkgrey;
     margin: 1rem 1rem .5rem 1rem;
+    border-radius: 5px;
   }
 
   .mobilebx span a {
@@ -528,7 +542,7 @@ footer span {
 
   .mobileheader {
     display: inherit;
-    background-color: #3B4C79;
+    background-color: white;
   }
 
   .mobileheader img {
@@ -576,7 +590,8 @@ footer span {
  }
 
  footer {
-    background-color: #3B4C79;
+    border-top: darkgrey 1px solid;
+    background-color: #ffffff;
  }
 
  footer p {
