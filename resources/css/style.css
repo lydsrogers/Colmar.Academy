@@ -65,7 +65,7 @@ header li {
   font-size: 1.25rem;
   font-weight: normal;
   text-align: right;
-  color: grey;
+  color: darkslategrey;
   flex-direction:row;
 }
 
@@ -110,7 +110,7 @@ a:visited {
 
 .text p {
   font-size: 1.7rem;
-  color: grey;
+  color: #433C54;
   font-style: italic;
 }
 
@@ -119,8 +119,8 @@ a:visited {
 }
 
   .text .greybttn {
-  background-color: grey;
-  color: white;
+  background-color: darkslategrey;
+  color: #433C54;
   height: 2.5rem;
   text-align: center;
   width: 20rem;
@@ -132,7 +132,7 @@ a:visited {
 
 
 .greycontainer a:visited {
-  color: lightgrey;
+  color: #ffffff;
   text-decoration:none;
 }
 
@@ -163,7 +163,7 @@ a:visited {
 
 .leftcontainer p{
   font-size: 1.25rem;
-  color: darkslategrey;
+  color: #433C54;
   font-style: italic;
 }
 
